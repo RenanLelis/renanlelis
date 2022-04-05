@@ -479,6 +479,10 @@ footer .text span a:hover {
   section .content {
     width: 85%;
   }
+
+  section .home {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -542,7 +546,7 @@ footer .text span a:hover {
   }
 
   nav.sticky .menu a:hover {
-    color: #4070f4;
+    color: #46B2E4;
   }
 
   nav .navbar .media-icons {
