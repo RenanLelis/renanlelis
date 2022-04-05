@@ -479,10 +479,6 @@ footer .text span a:hover {
   section .content {
     width: 85%;
   }
-
-  section .home {
-    width: 85%;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -559,7 +555,9 @@ footer .text span a:hover {
   }
 
   .home .text-two {
-    font-size: 65px;
+    font-size: 40px;
+    margin: 5px 0;
+    color: #46B2E4;
   }
 
   .home .text-three {
@@ -595,7 +593,9 @@ footer .text span a:hover {
 
 @media (max-width: 500px) {
   .home .text-two {
-    font-size: 55px;
+    font-size: 40px;
+    margin: 5px 0;
+    color: #46B2E4;
   }
 
   .home .text-three {
