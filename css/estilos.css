@@ -37,6 +37,20 @@
   bottom: 0;
 }
 
+.subtitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.subtitle span {
+  color: #0E2431;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 8px;
+}
+
 /* ------------------------------------------ */
 
 /* Scroll Bar CSS */
@@ -274,6 +288,64 @@ section .content {
   color: #46B2E4;
   font-size: 18px;
   margin: 0 6px;
+}
+
+/* ------------------------------------------ */
+/* Seção Projetos e Serviços */
+
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box a {
+  color: inherit;
+}
+
+.services .boxes .box:hover {
+  background: #46B2E4;
+  color: #fff;
+}
+
+.services .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #46B2E4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon {
+  background-color: #fff;
+  color: #46B2E4;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #fff;
 }
 
 /* ------------------------------------------ */
