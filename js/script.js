@@ -9,14 +9,12 @@ menuBtn.onclick = function () {
     menuBtn.style.opacity = "0";
     menuBtn.style.pointerEvents = "none";
     body.style.overflow = "hidden";
-    scrollBtn.style.pointerEvents = "none";
 }
 cancelBtn.onclick = function () {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
     body.style.overflow = "auto";
-    scrollBtn.style.pointerEvents = "auto";
 }
 
 // Side Navigation Bar Close While We Click On Navigation Links
@@ -26,5 +24,6 @@ for (var i = 0; i < navLinks.length; i++) {
         navBar.classList.remove("active");
         menuBtn.style.opacity = "1";
         menuBtn.style.pointerEvents = "auto";
+        body.style.overflow = "auto";
     });
 }
