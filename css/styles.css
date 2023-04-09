@@ -1,0 +1,489 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* ------------------------------------------ */
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.title span {
+    color: #0E2431;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.title span::before,
+.title span::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #0672A4;
+    left: 0;
+    bottom: 0;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.subtitle span {
+    color: #0E2431;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+/* ------------------------------------------ */
+
+/* Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom right, #0672A4, #0D9FB2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom right, #0672A4, #0D9FB2);
+}
+
+/* ------------------------------------------ */
+
+/* Menu de navegacao */
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom right, #0672A4, #0D9FB2);
+}
+
+nav .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+nav .navbar .menu {
+    display: flex;
+    position: relative;
+}
+
+nav .navbar .menu li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.navbar .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover {
+    color: #0E2431;
+}
+
+.navbar .icones_media_branco a {
+    color: #FFF;
+    font-size: 18px;
+    margin: 0 6px;
+}
+
+/* Menu de navegação lateral CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+nav .menu-btn {
+    color: #FFF;
+}
+
+.navbar .menu .menu-btn {
+    color: #fff;
+}
+
+/* ------------------------------------------ */
+
+/* Section Home */
+
+.home {
+    width: 100%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.home .home-content-left {
+    margin: 15px;
+    width: 450px;
+    text-align: justify;
+}
+
+.home .home-content-right {
+    margin: 15px;
+    max-width: 450px;
+    min-width: 350px;
+}
+
+.home .home-content-right img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.home .text-nome {
+    font-size: 50px;
+    margin: 5px 0;
+    color: #0672A4;
+    text-align: center;
+}
+
+.home .text-profissao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.home .text-profissao p {
+    color: #0E2431;
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+/* ------------------------------------------ */
+/* Sessão sobre mim */
+
+.sobre {
+    padding: 20px 0;
+    background-color: #F0F0F0;
+}
+
+.sobre-detalhes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobre-detalhes .left {
+    max-width: 450px;
+}
+
+.sobre-detalhes .left img {
+    width: 100%;
+}
+
+.sobre-detalhes .right {
+    max-width: 450px;
+    margin: 15px;
+}
+
+.topico {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.topico p {
+    justify-content: center;
+    padding-bottom: 6px;
+    color: #0672A4;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button a {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #0672A4;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+/* ------------------------------------------ */
+
+/* Dados de Contato */
+
+.contato {
+    background: #F0F8FF;
+}
+
+.contato .content {
+    margin: 20px auto 0 auto;
+    padding: 30px 0;
+}
+
+.contato .text {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.icone {
+    color: #0672A4;
+    font-size: 18px;
+    margin: 0 6px;
+}
+
+/* ------------------------------------------ */
+
+/* Seção Projetos e Serviços */
+
+.services {
+    margin: 20px 10px;
+}
+
+.services .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box a {
+    color: inherit;
+}
+
+.services .boxes .box:hover {
+    background: #0672A4;
+    color: #fff;
+}
+
+.services .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    background: #0672A4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon {
+    background-color: #fff;
+    color: #0672A4;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+    color: #0E2431;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+    color: #fff;
+}
+
+
+/* ------------------------------------------ */
+/* skills-section */
+
+.skills-section {
+    margin: 40px auto;
+    max-width: 90%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.skills .skill {
+    margin: 10px 15px;
+    padding: 5px 15px;
+    background-color: #0672A4;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.skills .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-content p {
+    max-width: 800px;
+}
+
+/* ------------------------------------------ */
+
+/* Footer */
+footer {
+    background: #0672A4;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* ------------------------------------------ */
+
+@media (max-width: 1000px) {
+    .home .home-content-right {
+        max-width: 350px;
+    }
+
+    .sobre-detalhes .left {
+        max-width: 350px;
+    }
+
+    .services .boxes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .services .boxes .box {
+        margin: 20px 0;
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home .home-content-left {
+        text-align: center;
+    }
+
+    .sobre {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 750px) {
+    nav .navbar {
+        width: 90%;
+    }
+
+    nav .navbar .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #0E2431;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.active .menu {
+        left: 0;
+    }
+
+    nav .navbar .menu a {
+        font-size: 23px;
+        display: block;
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    nav .navbar .menu a:hover {
+        color: #0672A4;
+    }
+
+    nav .navbar .icones_media_branco {
+        display: none;
+    }
+
+    nav .menu-btn,
+    .navbar .menu .cancel-btn {
+        display: block;
+    }
+}

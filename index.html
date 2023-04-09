@@ -7,7 +7,7 @@
     <meta name="author" content="Renan Lelis">
     <meta name="description" content="Site Pessoal com descrições de experiências, projetos e muito mais">
     <meta name="keywords" content="Renan, Lelis, tecnologia, programação, Go, Golang, Angular, Vue, VueJS, Vue3, Java">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,15 +21,15 @@
             <ul class="menu">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#projetos">Serviços / Portfolio</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <div class="cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
             </ul>
             <div class="icones_media_branco">
-                <a href="https://www.youtube.com/channel/UC2XILnOb-kWs0a4XPeRRpMg" target="_blank"><i
-                        class="fab fa-youtube"></i></a>
+                <!-- <a href="https://www.youtube.com/channel/UC2XILnOb-kWs0a4XPeRRpMg" target="_blank"><i
+                        class="fab fa-youtube"></i></a> -->
                 <a href="https://www.linkedin.com/in/renan-lelis-rufino-dos-santos-518b5119/" target="_blank"><i
                         class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/RenanLelis" target="_blank"><i class="fab fa-github"></i></a>
@@ -43,18 +43,14 @@
     <!-- Seção Home -->
 
     <section class="home" id="inicio">
-        <div class="home-content">
-            <div class="home-detalhes">
-                <div class="home-content-left">
-                    <div class="text">
-                        <div class="text-nome">Renan Lelis</div>
-                        <div class="text-profissao">
-                            <p>Arquiteto de Software, Desenvolvedor Full-Stack, Desenvolvedor Mobile</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="home-content-right">
-                    <img src="assets/me.png" alt="Foto minha e de minha família">
+        <div class="home-content-right">
+            <img src="assets/eu.jpg" alt="Foto minha e de minha família">
+        </div>
+        <div class="home-content-left">
+            <div class="text">
+                <div class="text-nome">Renan Lelis</div>
+                <div class="text-profissao">
+                    <p>Arquiteto de Software, Desenvolvedor Full-Stack, Desenvolvedor Mobile</p>
                 </div>
             </div>
         </div>
@@ -72,11 +68,11 @@
                     <div class="topico">
                         <p>Quem sou eu?</p>
                     </div>
-                    <p>Me chamo Renan, sou desenvolvedor com mais de 11 anos de experiência. trabalho atualmente como
-                        arquiteto de soluções de software há 6 anos e já tive experiências com diversas tecnologias e
-                        linguagens de programação como Java e SpringBoot, GO, NodeJS, Angular, VueJS3, Flutter e Dart,
-                        além
-                        de exercer atividades de definições de arquitetura, realizando
+                    <p>Me chamo Renan, sou desenvolvedor desde o ano de 2008. trabalho atualmente como
+                        arquiteto de soluções de software, desde 2016, e já tive experiências com diversas tecnologias e
+                        linguagens de programação como Java e SpringBoot, Kotlin, GO, NodeJS, Angular, VueJS3, ReactJS,
+                        Flutter e Dart,
+                        além de exercer atividades de definições de arquitetura, realizando
                         POCs, levantando estudos e tecnologias para sistemas de grande escala entre outras atividades.
                     </p>
                     <p>Sou entusiasta com tecnologias de desenvolvimento e agora estou elaborando treinamentos sobre
@@ -92,22 +88,23 @@
     <!-- Seção Projetos e Serviços -->
     <section class="services" id="projetos">
         <div class="content">
-            <!-- <div class="title"><span>Projetos pessoais e serviços prestados</span></div> -->
             <div class="title"><span>Serviços Prestados</span></div>
             <div class="boxes">
                 <div class="box">
-                    <a href="#contato">
+                    <!-- <a href="#contato"> -->
+                    <a>
                         <div class="icon">
                             <i class="fas fa-desktop"></i>
                         </div>
                         <div class="topic">Desenvolvimento Web</div>
-                        <p>Criação de sites e sistemas, preferencialmente com tecnologias como Angular, VueJS 3 e
+                        <p>Criação de sites e sistemas, preferencialmente com tecnologias como Angular, VueJS 3, ReactJS
+                            e
                             Flutter
                         </p>
                     </a>
                 </div>
                 <div class="box">
-                    <a href="#contato">
+                    <a>
                         <div class="icon">
                             <i class="fas fa-tablet-alt"></i>
                         </div>
@@ -117,47 +114,63 @@
                     </a>
                 </div>
                 <div class="box">
-                    <a href="#contato">
+                    <a>
                         <div class="icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <div class="topic">Arquitetura de Software</div>
+                        <div class="topic">Arquitetura e Desenvolvimento de Software</div>
                         <p>Definições arquiteturais para sistemas, com diagramas, desenvolvimento do projeto, realização
                             de
-                            provas de conceitos, entre outros</p>
+                            provas de conceitos, entre outros, além do desenvolvimetno considerando as boas práticas de
+                            projeto e desenvolvimento</p>
                     </a>
                 </div>
             </div>
-            <div class="title"><span>Projetos Pessoais</span></div>
-            <div class="boxes">
-                <div class="box">
-                    <a href="https://www.youtube.com/channel/UC2XILnOb-kWs0a4XPeRRpMg" target="_blank">
-                        <div class="icon">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="topic">Canal do Youtube</div>
-                        <p>Criado com intuito de promover o desenvolvimento de software, de forma a ensinar conceitos
-                            mas também desenvolver projetos
-                            completos</p>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="https://github.com/RenanLelis" target="_blank">
-                        <div class="icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="topic">Repositório Github</div>
-                        <p>Repositório com códigos públicos de projetos utilizados no canal do youtube ou desenvolvidos
-                            a parte</p>
-                    </a>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="topic">Treinamentos Udemy</div>
-                    <p>Treinamentos criados para a plataforma Udemy, no contexto do desenvolvimento de software,
-                        principalmente front-end, back-end e mobile.</p>
+        </div>
+    </section>
+
+    <!-- Seção Skills (Conhecimentos) e Portfolio -->
+    <section class="skills-section" id="skills">
+        <div class="title"><span>Conhecimentos</span></div>
+        <div class="skills">
+            
+            <div class="skill"><span>Java</span></div>
+            <div class="skill"><span>Java - Spring (Spring Boot)</span></div>
+            <div class="skill"><span>Kotlin - Spring (Spring Boot)</span></div>
+            <div class="skill"><span>Javascript</span></div>
+            <div class="skill"><span>Typescript</span></div>
+            <div class="skill"><span>NodeJS - ExpressJS - NestJS</span></div>
+            <div class="skill"><span>GO</span></div>
+            <div class="skill"><span>Docker</span></div>
+            <div class="skill"><span>Microserviços</span></div>
+            <div class="break"></div>
+            
+            <div class="skill"><span>HTML</span></div>
+            <div class="skill"><span>CSS</span></div>
+            <div class="skill"><span>JavaScript</span></div>
+            <div class="skill"><span>Angular</span></div>
+            <div class="skill"><span>ReactJS</span></div>
+            <div class="skill"><span>NextJS</span></div>
+            <div class="skill"><span>VueJS3</span></div>
+            <div class="break"></div>
+            
+            <div class="skill"><span>Flutter</span></div>
+            <div class="skill"><span>IOS - Swift - SwiftUI</span></div>
+            <div class="skill"><span>Android - Kotlin</span></div>
+
+        </div>
+
+        <div class="portfolio">
+            <div class="title"><span>Conheça meu Porfólio</span></div>
+            <div class="portfolio-content">
+                <!-- TODO Colocar imagens - sugestão carousel de imagens -->
+                <p>
+                    O Portfólio foi construído, a princípio, como uma série de pequenos projetos com exemplos de código
+                    para demonstração, lá serão encontrados o código-fonte e páginas relativas às versões implementadas
+                    em cada tecnologia
+                </p>
+                <div class="button">
+                    <a href="" target="_blank">Acesse o Portfólio</a>
                 </div>
             </div>
         </div>
@@ -172,8 +185,8 @@
                 <p>Entre em contato pelo e-mail:</p>
                 <p>renan.lelis.profissional@gmail.com</p>
                 <div class="media-icons">
-                    <a href="https://www.youtube.com/channel/UC2XILnOb-kWs0a4XPeRRpMg" target="_blank"><i
-                            class="fab fa-youtube icone"></i></a>
+                    <!-- <a href="https://www.youtube.com/channel/UC2XILnOb-kWs0a4XPeRRpMg" target="_blank"><i
+                            class="fab fa-youtube icone"></i></a> -->
                     <a href="https://www.linkedin.com/in/renan-lelis-rufino-dos-santos-518b5119/" target="_blank"><i
                             class="fab fa-linkedin icone"></i></a>
                     <a href="https://github.com/RenanLelis" target="_blank"><i class="fab fa-github icone"></i></a>
